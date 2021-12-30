@@ -1,0 +1,64 @@
+.team
+	padding: 60px 0
+	&__title
+	.swiper-container
+		padding: 20px 0
+	.swiper-slide
+		display: flex
+		justify-content: center
+	&__item
+		width: 240px
+		text-align: center
+		background: #000
+		border-radius: 10px
+	&__img
+		display: flex
+		align-items: flex-end
+		height: 240px
+		img
+			width: 100%
+			height: 265px
+			object-fit: contain
+	&__info
+		padding: 20px 33px 33px
+	&__name
+		display: block
+		margin: 0 0 10px 0
+		font-size: 30px
+		line-height: 1
+		text-transform: uppercase
+	&__description
+		font-size: 16px
+		text-transform: uppercase
+	&__button
+		margin: 0 auto
+
+.swiper__navigation
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 560px
+	margin: 40px auto
+	.swiper-pagination
+		position: static
+	.swiper-pagination-bullet
+		display: inline-block
+		width: 10px
+		height: 10px
+		background: #434343
+		opacity: 1
+		margin: 0 4px
+	.swiper-pagination-bullet-active
+		background: #e30016
+	button
+		position: static
+		width: 40px
+		height: auto
+		margin: 0 0 0 0
+		&::after
+			display: none
+
+@media screen and ( max-width: 992px )
+	.team
+	.swiper__navigation
+		width: 100%

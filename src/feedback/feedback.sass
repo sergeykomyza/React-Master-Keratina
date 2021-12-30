@@ -1,0 +1,105 @@
+.feedback
+	margin: 0 0 50px 0
+	&__form
+		position: relative
+		padding: 80px 60px
+		background: #fff
+		border-radius: 5px
+	&__title
+		margin: 0 0 10px 0
+		color: #000
+		line-height: 1
+	&__text
+		margin: 0 0 5px 0
+		font-size: 12px
+		color: #bb0516
+		text-transform: uppercase
+		text-align: center
+
+.form
+	&__fields
+		margin: 0 0 10px 0
+		padding: 20px 0
+		border-width: 3px 0 3px 0
+		border-style: solid
+		border-color: #ebebeb
+	&__item
+		width: 100%
+		height: 65px
+		margin: 0 0 20px 0
+		padding: 7px 16px
+		background: #f6f6f6
+		border: 1px solid #ebebeb
+		&--message
+			height: 140px
+			margin: 0 0 0 0
+			.form__input
+				height: 90px
+				resize: none
+	&__label
+		display: block
+		margin: 0 0 5px 0
+		font-size: 12px
+		color: #000
+		span
+			color: #bb0516
+	&__input
+		width: 100%
+		font-weight: 700
+		color: #000
+		border: none
+		background: transparent
+	&__agree
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 0 0 30px 0
+	&__button
+		display: block
+		margin: 0 auto
+		padding: 10px 57px
+		font-size: 15px
+		font-weight: 500
+		color: #fff
+		text-transform: uppercase
+		background: #bb0516
+		border-radius: 30px
+		&:hover
+			background: #bb0516
+
+.agree
+	&__label
+		display: flex
+		align-items: center
+		margin: 0 46px 0 0
+		font-size: 15px
+		color: #000
+		a
+			color: #ff6400
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		&::before
+			content: ""
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-shrink: 0
+			width: 32px
+			height: 32px
+			margin-right: 13px
+			font-size: 30px
+			color: #bb0516
+			border: 1px solid #d2d0d0
+			border-radius: 5px
+			background: #f8f9f9
+			cursor: pointer
+	&__check
+		display: none
+		&:checked + .agree__label::before
+			content: '✓'
+
+@media screen and ( max-width: 992px )
+	.feedback
+		&__form
+			padding: 30px 15px

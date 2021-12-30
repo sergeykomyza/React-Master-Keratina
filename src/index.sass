@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap")
+@import "~bootstrap/scss/bootstrap"
+
+body
+	font-family: 'Oswald', sans-serif
+	font-weight: 400
+	line-height: normal
+	color: #FFF
+	background: #f8f9f9
+
+*, p, h1, h2, h3, h4, h5, h6, label
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    line-height: normal
+
+ul
+	margin: 0
+	padding: 0
+	list-style: none
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+button
+	background: transparent
+	border: none
+	outline: none
+	cursor: pointer
+	&:focus
+		outline: none
+
+input
+	outline: none
+
+.container
+	max-width: 1140px
+	position: relative
+	margin-left: auto
+	margin-right: auto
+	padding-right: 15px
+	padding-left: 15px
+
+.button
+	display: flex
+	align-items: center
+	padding: 10px 23px
+	font-size: 16px
+	font-weight: 500
+	text-transform: uppercase
+	background: #fff
+	border-radius: 30px
+	img
+		width: 18px
+		margin: 0 0 0 10px
+		transition: all 0.3s
+	&:hover img
+		transform: translateX(10px)
+
+.section-title
+	margin: 0 0 40px 0
+	font-family: 'Playfair Display', serif
+	font-size: 54px
+	font-style: italic
+	text-align: center
+
+.visible-992
+	display: none
+
+@media screen and ( max-width: 992px )
+	.visible-992
+		display: block
+	.hidden-992
+		display: none
+	.section-title
+		font-size: 40px

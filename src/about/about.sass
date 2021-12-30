@@ -1,0 +1,90 @@
+.about
+	padding: 100px 0
+	&__box
+		position: relative
+		padding: 200px 0 0 0
+	&__imgs
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+	&__row
+		position: relative
+		z-index: 2
+		display: flex
+		align-items: flex-end
+		&:nth-of-type(1)
+			justify-content: center
+			.about__foto
+				margin: 0 60px
+		&:nth-of-type(2)
+			justify-content: space-between
+	&__icon
+		width: 120px
+		height: 120px
+		padding: 22px
+		border-radius: 5px
+		background-color: #e30016
+		img
+	&__foto
+	&__info
+		margin: 0 85px
+		padding: 400px 50px 50px
+		background: #000
+
+.info-about
+	&__title
+		margin: 0 0 20px 0
+		font-family: 'Playfair Display', serif
+		font-size: 23px
+		font-style: italic
+		text-align: center
+	&__text
+		font-weight: 300
+		column-count: 2
+		column-gap: 90px
+		text-align: justify
+	&__button
+		margin: 43px auto -70px auto
+
+.fadeIn
+	opacity: 0
+
+@media screen and ( max-width: 1200px )
+	.about
+		&__row
+			&:nth-of-type(1)
+				margin: 0 0 30px 0
+				.about__foto
+					margin: 0 20px
+		&__foto
+			&--central
+				width: 375px
+
+@media screen and ( max-width: 992px )
+	.about
+		&__box
+			padding: 0
+		&__imgs
+			position: static
+		&__row
+			&:nth-of-type(1)
+				display: none
+		&__foto
+			display: none
+			&--central
+				display: block
+				margin: 0 auto
+		&__info
+			margin: -65px 0 0 0
+			padding: 100px 15px 50px 15px
+
+	.info-about
+		&__text
+			column-count: 1
+
+@media screen and ( max-width: 400px )
+	.about
+		&__foto
+			&--central
+				width: 100%

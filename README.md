@@ -1,5 +1,7 @@
 # Сайт салона красоты на React (Create React App)
 
+![MKeratin_v02](https://user-images.githubusercontent.com/62849901/147766483-ecc5a0b3-0fd0-48e5-a956-36dd4b207116.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
